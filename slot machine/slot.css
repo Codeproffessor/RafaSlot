@@ -1,0 +1,517 @@
+body {
+  background-color:black;
+  -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   height: 100%;
+   margin-left: 30%;
+}
+
+.reels {
+margin-left: 30%;
+  position:absolute;
+  display:block;
+  height:68vh;
+  width:78.5vw;
+  left:1.5vw;
+  top:17vh;
+  max-width:700px;
+  max-height:800px;
+  z-index:2;
+  cursor:default;
+  overflow:hidden;
+
+}
+
+#reel1 {
+  height: 800vh;
+  width: 14vw;
+  max-width:130px;
+  border-left:0.1vw solid black;
+  text-align:center;
+  background-color:thistle;
+  line-height:17vh;
+  line-spacing:vh;
+  font-size: 300%;
+  position:absolute;
+  left:4%;
+  top: -85vh;
+  overflow:hidden;
+  animation:reel1ColorChange 10s infinite;
+}
+
+#reel2 {
+  height: 800vh;
+  width: 14vw;
+  max-width:130px;
+  border-left:0.1vw solid black;
+  text-align:center;
+  background-color:lightblue;
+  line-height:17vh;
+  font-size: 300%;
+  position:absolute;
+  left:21%;
+  top:-390vh;
+  overflow:hidden;
+  animation:reel2ColorChange 10s infinite;
+}
+
+#reel3 {
+  height: 800vh;
+  width: 14vw;
+  max-width:130px;
+  border-left:0.1vw solid black;
+  text-align:center;
+  background-color:lightgray;
+  line-height:17vh;
+  font-size: 300%;
+  position:absolute;
+  left:38%;
+  top:-50vh;
+  overflow:hidden;
+  animation:reel3ColorChange 10s infinite;
+}
+
+#reel4 {
+  height: 800vh;
+  width: 14vw;
+  max-width:130px;
+  text-align:center;
+  border-left:0.1vw solid black;
+  background-color:palegoldenrod;
+  line-height:17vh;
+  font-size: 300%;
+  position:absolute;
+  left:55%;
+  top:-85vh;
+  overflow:hidden;
+  animation:reel4ColorChange 10s infinite;
+
+}
+
+#reel5 {
+  height: 800vh;
+  width: 14vw;
+  max-width:130px;
+  border-left:0.1vw solid black;
+  text-align:center;
+  background-color:tan;
+  line-height:17vh;
+  font-size: 300%;
+  position:absolute;
+  left:72%;
+  top:-390vh;
+  overflow:hidden;
+  animation:reel5ColorChange 10s infinite;
+}
+
+#reelSideLeft {
+  height: 100vh;
+  width: 3vw;
+  max-width:30px;
+  text-align:center;
+  background-color:black;
+  color:white;
+  line-height:17vh;
+  font-size: 120%;
+  position:absolute;
+  left:0%;
+  text-orientation:upright;
+  overflow:hidden;
+  }
+ #reelSideRight {
+  height: 100vh;
+  width: 2.5vw;
+  max-width:30px;
+  text-align:center;
+  background-color:black;
+  color:white;
+  line-height:17vh;
+  font-size: 120%;
+  position:absolute;
+  left:89.7%;
+  overflow:hidden;
+  }
+
+#reelTop {
+  width:72vw;
+  height:1vh;
+  max-width:650px;
+  background-color:black;
+  position:absolute;
+  top:0px;
+  left:0vw;
+}
+
+#reelBottom {
+  width:72vw;
+  height:1vh;
+  max-width:650px;
+  background-color:black;
+  position:absolute;
+  top:67vh;
+  left:0vw;
+}
+
+.machine{
+  height:100vh;
+  width:78.5vw;
+  max-width:700px;
+  max-height: auto;
+  background-image:radial-gradient(black, darkgray, gray, black);
+  border-color:blue;
+  position:absolute;
+  overflow:hidden;
+  z-index:1;
+
+}
+
+#topDisplay {
+  width:72vw;
+  height:13vh;
+  max-width:655px;
+  background-color:black;
+  verticle-align: middle;
+  border-style:double;
+  border-width:3px;
+  border-color:darkgray;
+  overflow:hidden;
+  font-family:courier;
+  text-align:center;
+  text-transform:uppercase;
+  position:absolute;
+  top:1vh;
+  left:1.5vw;
+  animation-name:topDisplayAni;
+  animation-iteration-count:infinite;
+  animation-duration:5s;
+}
+
+#topDisplayGlass {
+  width:74vw;
+  height:14vh;
+  max-width:661px;
+  background-color:rgba(33, 33, 33, 0.7);
+  color:white;
+  text-transform:uppercase;
+  font-weight:bold;
+  font-weight:bold;
+  font-size: 240%;
+  line-height:13vh;
+  overflow:hidden;
+  text-align:center;
+  position:absolute;
+  top:1vh;
+  left:1.5vw;
+}
+
+#spin {
+  height: 10vh;
+  width: 17vw;
+  border-color:black;
+  border-radius:6%;
+  color:white;
+  box-shadow: 0px 15px 10px black;
+  font-family:courier;
+  font-weight:bold;
+  font-size:120%;
+  text-align:center;
+  background-image:radial-gradient(red, black);
+  position:relative;
+  left:77%;
+  max-width:130px;
+  top:86vh;
+  overflow:hidden;
+}
+
+#spin:active {
+
+  box-shadow: -1px 1px 1px black;
+  border:1px solid black;
+  color:pink;
+}
+
+#totalMoney {
+ height: 8vh;
+  width: 16vw;
+  border-radius:6%;
+  color:goldenrod;
+  line-height:8vh;
+  box-shadow: 0px 0px 10px darkgray;
+  font-family:courier;
+  font-weight:bold;
+  font-size:150%;
+  text-align:center;
+  background-color:black;
+  position:relative;
+  left:2%;
+  max-width:130px;
+  top:76vh;
+  overflow:hidden;
+}
+
+#totalMoneySign {
+ height: 3vh;
+  width: 16vw;
+  color:tan;
+  border-radius:3%;
+  box-shadow: 0px 0px 10px black;
+  font-family:sans-serif;
+  font-weight:bold;
+  font-size:80%;
+  text-align:center;
+  background-color:green;
+  text-transform:uppercase;
+  position:relative;
+  left:2%;
+  max-width:130px;
+  top:76.2vh;
+  overflow:hidden;
+}
+
+#betAmount {
+  height: 8vh;
+  width: 16vw;
+  border-radius:6%;
+  color:goldenrod;
+  line-height:8vh;
+  box-shadow: 0px 0px 10px darkgray;
+  font-family:courier;
+  font-weight:bold;
+  font-size:150%;
+  text-align:center;
+  background-color:black;
+  position:relative;
+  left:44.5%;
+  max-width:136px;
+  top:62vh;
+  overflow:hidden;
+}
+
+#betSign{
+  height: 3vh;
+  width: 16vw;
+  color:white;
+  border-radius:3%;
+  box-shadow: 0px 0px 10px black;
+  font-family:sans-serif;
+  line-height:3vh;
+  font-size:70%;
+  text-align:center;
+  background-image:linear-gradient(darkgray, black);
+  text-transform:uppercase;
+  position:relative;
+  left:44.5%;
+  max-width:136px;
+  top:73.2vh;
+  cursor:default;
+  overflow:hidden;
+}
+
+#plusBet {
+  height: 4vh;
+  width: 4vw;
+  color:white;
+  border-radius:3%;
+  box-shadow:0px 3px 3px black;
+  font-family:sans-serif;
+  line-height:4vh;
+  font-size:200%;
+  text-align:center;
+  background-color:firebrick;
+  text-transform:uppercase;
+  position:relative;
+  left:66%;
+  max-width:43px;
+  top:54.4vh;
+  cursor:default;
+  overflow:hidden;
+}
+
+#plusBet:active {
+  top:54.9vh;
+  box-shadow:0px 0px 1px black;
+}
+
+#minusBet {
+  height: 4vh;
+  width: 4vw;
+  color:white;
+  border-radius:3%;
+  box-shadow:0px 3px 3px black;
+  font-family:sans-serif;
+  line-height:3vh;
+  font-size:200%;
+  text-align:center;
+  background-color:cadetblue;
+  text-transform:uppercase;
+  position:relative;
+  left:37.7%;
+  max-width:43px;
+  top:50.4vh;
+  cursor:default;
+  overflow:hidden;
+}
+
+#minusBet:active {
+  top:50.9vh;
+  box-shadow:0px 0px 1px black;
+}
+
+#minBet {
+  height: 6vh;
+  width: 4vw;
+  color:white;
+  border-radius:3%;
+  box-shadow:0px 3px 3px black;
+  font-family:sans-serif;
+  line-height:5vh;
+  writing-mode:vertical-rl;
+  text-orientation:upright;
+  font-size:50%;
+  text-align:center;
+  background-color:darkcyan;
+  text-transform:uppercase;
+  position:relative;
+  left:37.7%;
+  max-width:43px;
+  top:45.3vh;
+  cursor:default;
+  overflow:hidden;
+}
+
+#minBet:active {
+  top:45.8vh;
+  box-shadow:0px 0px 1px black;
+}
+
+#maxBet {
+  height: 6vh;
+  width: 4vw;
+  color:white;
+  border-radius:3%;
+  box-shadow: 0px 0px 10px black;
+  font-family:sans-serif;
+  line-height:4vh;
+  font-size:50%;
+  text-align:center;
+  background-color:darkred;
+  box-shadow:0px 3px 3px black;
+  text-transform:uppercase;
+  writing-mode:vertical-rl;
+  text-orientation:upright;
+  position:relative;
+  left:66%;
+  max-width:43px;
+  top:51.2vh;
+  cursor:default;
+  overflow:hidden;
+}
+
+#maxBet:active {
+  top:51.7vh;
+  box-shadow:0px 0px 1px black;
+}
+
+#level {
+  height: 8vh;
+  width: 8vw;
+  border-radius:6%;
+  color:white;
+  line-height:8vh;
+  box-shadow: 0px 0px 10px darkgray;
+  font-family:courier;
+  font-weight:bold;
+  font-size:170%;
+  text-align:center;
+  background-image:radial-gradient(turquoise, black);
+  position:relative;
+  left:22.5%;
+  max-width:60px;
+  top:31.3vh;
+  overflow:hidden;
+}
+
+#levelSign{
+  height: 3vh;
+  width: 8vw;
+  color:aquamarine;
+  border-radius:3%;
+  box-shadow: 0px 0px 10px black;
+  font-family:sans-serif;
+  line-height:3vh;
+  font-size:60%;
+  text-align:center;
+  background-color:black;
+  text-transform:uppercase;
+  position:relative;
+  left:22.5%;
+  max-width:60px;
+  top:42.2vh;
+  overflow:hidden;
+}
+
+#winLine {
+  width:73vw;
+  max-width:660px;
+  height:14vh;
+  font-family:courier;
+  font-size:120%;
+  font-weight:bold;
+  text-align:center;
+  line-height:15vh;
+  background-image:radial-gradient(red, rgba(100, 100, 100, 0.3));
+  z-index:0;
+  color:white;
+  position:relative;
+  top: 1vh;
+  left: 1.5vw;
+  cursor:default;
+}
+
+/*@keyframes reel1ColorChange {
+  0% {background-image:linear-gradient(to right, white, thistle)}
+  25% {background-image:linear-gradient(to right, lightcoral, lightgray)}
+  50% {background-image:linear-gradient(to right, palegoldenrod, aqua)}
+  75% {background-image:linear-gradient(to right, white, tan)}
+  100% {background-image:linear-gradient(to right, white, thistle)}
+}
+
+@keyframes reel2ColorChange {
+  0% {background-image:linear-gradient(to right, thistle, lightcoral)}
+  25% {background-image:linear-gradient(to right, lightgray, palegoldenrod)}
+  50% {background-image:linear-gradient(to right, aqua, white)}
+  75% {background-image:linear-gradient(to right, tan, white)}
+  100% {background-image:linear-gradient(to right, thistle, lightcoral)}
+}
+
+@keyframes reel3ColorChange {
+  0% {background-image:linear-gradient(to right, lightcoral, lightgray)}
+  25% {background-image:linear-gradient(to right, palegoldenrod, aqua)}
+  50% {background-image:linear-gradient(to right, white, tan)}
+  75% {background-image:linear-gradient(to right, white, thistle)}
+  100% {background-image:linear-gradient(to right, lightcoral, lightgray)}
+}
+
+@keyframes reel4ColorChange {
+  0% {background-image:linear-gradient(to right, lightgray, palegoldenrod)}
+  25% {background-image:linear-gradient(to right, aqua, white)}
+  50% {background-image:linear-gradient(to right, tan, white)}
+  75% {background-image:linear-gradient(to right, thistle, lightcoral)}
+  100% {background-image:linear-gradient(to right, lightgray, palegoldenrod)}
+}
+
+@keyframes reel5ColorChange {
+  0% {background-image:linear-gradient(to right, palegoldenrod, aqua)}
+  25% {background-image:linear-gradient(to right, white, tan)}
+  50% {background-image:linear-gradient(to right, white, thistle)}
+  75% {background-image:linear-gradient(to right, lightcoral, lightgray)}
+  100% {background-image:linear-gradient(to right, palegoldenrod, aqua)}
+}*/
+
+@keyframes topDisplayAni {
+  0% {background-image:linear-gradient(to right, black, orange)}
+  33% {background-image:linear-gradient(to right, red, darkgray)}
+  66% {background-image:linear-gradient(to right, green, blue)}
+  100% {background-image:linear-gradient(to right, black, orange)}
+}
